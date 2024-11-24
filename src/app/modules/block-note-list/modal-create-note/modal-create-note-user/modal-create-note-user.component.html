@@ -1,0 +1,23 @@
+<div class="modal-content">
+    <div class="modal-body d-flex flex-column" style="min-height: 204px;">
+        <app-modal-header (close)="close()"></app-modal-header>
+        <div class="row aligns-items-center">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Titulo Nota</label>
+                    <input type="email" class="form-control" placeholder="Lista mercado">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Subtitulo Nota</label>
+                    <input type="email" class="form-control" placeholder="Para el Viernes">
+                </div>
+                <div class="mb-3" contenteditable="true" class="note-editor" ariaPlaceholder="Escribe tu nota aqui...">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer mt-auto">
+            <button class="btn btn-secondary" (click)="close()">Cancelar</button>
+            <button class="btn btn-primary">Crear</button>
+        </div>
+    </div>
+</div>

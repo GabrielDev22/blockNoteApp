@@ -1,0 +1,48 @@
+.title-block-note{
+    color: #f3f3f3;
+    text-shadow: 2px 2px 2px #416a7e;
+    text-align: center;
+}
+
+.content-note-create{
+    padding: 6px;
+}
+
+.content-note-create:hover{
+    box-shadow: rgba(0, 0, 0, 0.719) 0px 2px 4px;
+}
+
+.text-create-note{
+    color: black;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card{
+    color: #fff;
+    width: 28rem;
+    height: 250px;
+    border: 2px solid white;
+    box-shadow: rgba(206, 206, 206, 0.719) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.card-body.bg-color{
+    background-color: #4b5458;
+}
+
+.card-title.bg-color{
+    background-color: #4b5458;
+}
+
+.card-text.bg-color{
+    background-color: #4b5458;
+}
+
+.footer-card.bg-color{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #4b5458;
+    margin-top: auto;
+}
+

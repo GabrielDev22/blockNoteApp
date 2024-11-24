@@ -1,0 +1,132 @@
+.modal-content{
+  background-color: #fff;
+}
+
+.modal-body{
+    padding: 0px;
+}
+
+.content-button-modal{
+  margin-top: auto;
+}
+
+.btn-secondary{
+  font-size: 12px;
+  width: 90px;
+  background-color: dimgrey;
+  border:1px solid white;
+  margin-left: 6px;
+}
+
+.btn-primary{
+  font-size: 14px;
+  width: 90px;
+  background-color: blueviolet;
+  border:1px solid white;
+}
+
+.btn-primary:hover{
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.form-label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: black;
+  margin-left: 1rem;
+}
+
+.form-control{
+  width: 95%;
+  margin-left: 1rem;
+}
+
+.form-control:focus{
+  border-color: blueviolet;
+  box-shadow: 0 0 0 0.15rem rgba(137, 43, 226, 0.171);
+}
+
+.note-editor {
+  width: 95%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 150px;
+  outline: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-left: 1rem;
+}
+
+.note-editor:empty:before {
+  content: attr(placeholder);
+  color: black;
+  font-style: italic;
+}
+
+.preview {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.preview-content {
+  border: 1px dashed #ddd;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+  
+
+@media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 545px;
+    }
+
+    .modal-sm {
+      max-width: 264px;
+    }
+
+    .modal-confirm {
+      max-width: 320px;
+    }
+
+    .modal-md {
+      max-width: 355px;
+    }
+    .modal-std {
+      max-width: 400px;
+    }
+    .modal-lg,
+    .modal-xl {
+      max-width: 800px;
+    }
+    .modal-xxl {
+      max-width: 1100px;
+    }
+    .modal-80{
+      max-width: 80%;
+    }
+    .modal-xxxl{
+      max-width: 100%;
+      .modal-dialog{
+        max-width: 90%;
+        .modal-body{
+          max-height: unset;
+        }
+      }
+    }
+  }
