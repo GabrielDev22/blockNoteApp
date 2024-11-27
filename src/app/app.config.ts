@@ -4,6 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withFetch, withNoXsrfProtection } from '@angular/common/http';
+import { provideQuillConfig } from 'ngx-quill';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -11,6 +12,12 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes),
-    provideClientHydration()
-  ]
+    provideClientHydration(),
+    provideQuillConfig({
+      modules: {
+        syntax: true,
+        toolbar: []
+      }
+    })
+  ],
 };

@@ -27,8 +27,8 @@ export class BlockNoteService {
     return this.http.post<BlockNote>(`${API_BLOCK_NOTE_ENDPOINT}/update`, updateNote);
   }
 
-  deleteBlockNote(deleteNote : BlockNote): Observable<BlockNote>{
-    return this.http.post<BlockNote>(`${API_BLOCK_NOTE_ENDPOINT}/delete`, deleteNote);
+  deleteBlockNote(id : number): Observable<BlockNote>{
+    return this.http.delete<BlockNote>(`${API_BLOCK_NOTE_ENDPOINT}/delete/${id}`);
   }
 
 }

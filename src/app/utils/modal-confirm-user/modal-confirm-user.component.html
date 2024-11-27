@@ -1,0 +1,15 @@
+<div class="modal-content">
+    <div class="modal-body p-1 d-flex flex-column" style="min-height: 204px;">
+        <app-modal-header (close)="close()"></app-modal-header>
+        <div class="row aligns-items-center">
+            <h4 class="title-text-modal">{{title}}</h4>
+            <div class="text-center text-dark mb-3 p-3">
+                {{textContent}}
+            </div>
+        </div>
+        <div class="modal-footer mt-auto">
+            <button class="btn btn-cancel" (click)="close()">Cancelar</button>
+            <button class="btn btn-sucess" (click)="sucess()">Eliminar</button>
+        </div>
+    </div>
+</div>
